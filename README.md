@@ -1,24 +1,26 @@
-# IPL Data Analytics Project
+# Sales Data Analysis Project
 
 ## Overview
 
-This project demonstrates a complete data analytics workflow using Python, PostgreSQL, and Power BI. The analysis starts with loading the dataset, followed by data cleaning and exploratory data analysis (EDA). The cleaned data is then stored in PostgreSQL for SQL-based analysis. Finally, an interactive Power BI dashboard is created to visualize key insights, along with a project report and presentation.
+This project demonstrates an end-to-end data analytics workflow using Python, PostgreSQL, SQL, and Power BI. The project focuses on analyzing sales data to uncover business insights, identify trends, and build an interactive dashboard for decision-making. The workflow includes data cleaning, exploratory data analysis (EDA), SQL analysis, visualization, reporting, and presentation.
 
 ## Dataset
 
-* **Dataset:** IPL Matches Dataset
+* **Dataset:** Sales Dataset
 * **Format:** CSV
-* **Records:** Match and player statistics
 * **Contents:**
 
-  * Match details
-  * Teams
-  * Players
-  * Venues
-  * Toss information
-  * Match results
-  * Scores
-  * Awards
+  * Order ID
+  * Order Date
+  * Customer Details
+  * Product Information
+  * Category & Sub-Category
+  * Region
+  * Sales
+  * Quantity
+  * Profit
+  * Discount
+  * Shipping Details
 
 ## Tools & Technologies
 
@@ -37,8 +39,8 @@ This project demonstrates a complete data analytics workflow using Python, Postg
 
 ### 1. Data Loading
 
-* Imported the dataset into Python.
-* Explored dataset structure and basic information.
+* Imported the sales dataset into Python.
+* Explored the dataset structure and checked data quality.
 
 ### 2. Data Cleaning
 
@@ -46,83 +48,88 @@ This project demonstrates a complete data analytics workflow using Python, Postg
 * Handled missing values.
 * Corrected data types.
 * Standardized column names.
-* Prepared data for analysis.
+* Prepared the dataset for analysis.
 
 ### 3. Exploratory Data Analysis (EDA)
 
-* Analyzed team performance.
-* Examined player statistics.
-* Studied venue-wise performance.
-* Identified winning patterns.
-* Created visualizations using Python.
+* Analyzed sales trends.
+* Identified top-selling products.
+* Examined customer purchasing patterns.
+* Compared regional performance.
+* Evaluated profit and discount relationships.
+* Created visualizations to understand business performance.
 
 ### 4. SQL Analysis
 
 * Imported the cleaned dataset into PostgreSQL.
-* Wrote SQL queries to answer business questions.
-* Used filtering, grouping, joins, aggregation, and sorting.
-* Extracted meaningful insights from the database.
+* Executed SQL queries to answer business questions.
+* Used filtering, grouping, aggregation, joins, and sorting.
+* Generated insights from the sales database.
 
 ### 5. Power BI Dashboard
 
-Created an interactive dashboard featuring:
+Developed an interactive dashboard featuring:
 
-* Team performance
-* Season-wise analysis
-* Venue statistics
-* Winning trends
-* Player performance
-* Interactive filters and slicers
+* Sales Overview
+* Profit Analysis
+* Regional Performance
+* Category & Sub-Category Analysis
+* Monthly Sales Trends
+* Top Products
+* Customer Insights
+* Interactive Filters and Slicers
 
 ### 6. Report
 
-Prepared a detailed report containing:
+Prepared a project report including:
 
-* Project objectives
-* Methodology
-* Data cleaning process
-* Analysis
-* Visualizations
-* Key findings
-* Business insights
+* Project Objective
+* Data Cleaning Process
+* EDA Findings
+* SQL Analysis
+* Dashboard Insights
+* Business Recommendations
 
 ### 7. Presentation
 
-Created a professional project presentation using Gamma to summarize:
+Created a professional presentation using Gamma covering:
 
-* Problem statement
+* Project Overview
 * Workflow
 * Dashboard
-* Insights
+* Key Insights
+* Business Recommendations
 * Conclusion
 
 ## Dashboard Highlights
 
-* Team-wise performance comparison
-* Season-wise trends
-* Venue analysis
-* Top-performing players
-* Match outcome analysis
-* Interactive filters for deeper exploration
+* Total Sales
+* Total Profit
+* Sales by Region
+* Sales by Category
+* Monthly Sales Trend
+* Top Performing Products
+* Profit Analysis
+* Interactive Filtering
 
 ## Key Results
 
-* Identified the most successful teams.
-* Analyzed player performances across seasons.
-* Found venue-wise winning patterns.
-* Compared toss decisions with match outcomes.
-* Generated insights using SQL and Power BI visualizations.
+* Identified top-performing products and categories.
+* Compared regional sales and profitability.
+* Analyzed customer purchasing trends.
+* Evaluated the impact of discounts on profit.
+* Generated actionable business insights using SQL and Power BI.
 
 ## Project Structure
 
 ```text
-IPL-Data-Analytics/
+Sales-Data-Analysis/
 │
 ├── data/
 ├── notebooks/
 ├── sql/
 ├── powerbi/
-├── report/
+├── reports/
 ├── presentation/
 ├── images/
 ├── README.md
@@ -133,22 +140,20 @@ IPL-Data-Analytics/
 
 1. Clone the repository.
 2. Install the required Python libraries.
-3. Open the Jupyter Notebook.
-4. Run the data cleaning and EDA notebooks.
-5. Import the cleaned dataset into PostgreSQL.
-6. Execute the SQL queries.
-7. Open the Power BI dashboard (.pbix file).
-8. Review the report and presentation for project insights.
+3. Open the Jupyter Notebook and run the analysis notebooks.
+4. Import the cleaned dataset into PostgreSQL.
+5. Execute the SQL queries.
+6. Open the Power BI (.pbix) file to explore the dashboard.
+7. Review the report and presentation for detailed insights.
 
 ## Future Improvements
 
-* Add live IPL data updates.
-* Build predictive models for match outcomes.
-* Deploy the dashboard online.
 * Automate the ETL pipeline.
-* Add advanced analytics and forecasting.
+* Build sales forecasting models.
+* Integrate real-time sales data.
+* Deploy the dashboard online.
+* Add machine learning models for customer and sales prediction.
 
 ## Author
 
 **Anshika Agarwal**
-
